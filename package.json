@@ -18,7 +18,6 @@
   },
   "dependencies": {
     "clipboardy": "^4.0.0",
-    "commander": "^13.1.0",
-    "cordlink": "link:"
+    "commander": "^13.1.0"
   }
 }
