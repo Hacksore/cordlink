@@ -15,6 +15,8 @@ program
 
       // copy to clipboard
       clipboardy.write(markdownUrl);
+      
+      console.log('Markdown link copied to clipboard 😂!');
     } catch (err: any) {
       console.log(err.message);
     }
