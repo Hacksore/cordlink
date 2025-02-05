@@ -1,29 +1,23 @@
 {
-  "name": "2025-02-05-07-54-53",
-  "private": true,
-  "version": "0.0.0",
+  "name": "cordlink",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "dev": "tsx src/cli.ts",
+    "build": "tsc"
   },
-  "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+  "bin": {
+    "cordlink": "dist/cli.js"
   },
   "devDependencies": {
-    "@eslint/js": "^9.19.0",
-    "@types/react": "^19.0.8",
-    "@types/react-dom": "^19.0.3",
-    "@vitejs/plugin-react": "^4.3.4",
-    "eslint": "^9.19.0",
-    "eslint-plugin-react-hooks": "^5.0.0",
-    "eslint-plugin-react-refresh": "^0.4.18",
-    "globals": "^15.14.0",
-    "typescript": "~5.7.2",
-    "typescript-eslint": "^8.22.0",
-    "vite": "^6.1.0"
+    "tsx": "^4.19.2",
+    "typescript": "~5.7.2"
+  },
+  "pnpm": {
+    "overrides": {}
+  },
+  "dependencies": {
+    "commander": "^13.1.0",
+    "cordlink": "link:"
   }
 }
