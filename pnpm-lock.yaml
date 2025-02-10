@@ -14,10 +14,10 @@ importers:
       commander:
         specifier: ^13.1.0
         version: 13.1.0
-      cordlink:
-        specifier: 'link:'
-        version: 'link:'
     devDependencies:
+      '@types/node':
+        specifier: '20'
+        version: 20.17.17
       tsx:
         specifier: ^4.19.2
         version: 4.19.2
@@ -171,6 +171,9 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@types/node@20.17.17':
+    resolution: {integrity: sha512-/WndGO4kIfMicEQLTi/mDANUu/iVUhT7KboZPdEqqHQ4aTS+3qT3U5gIqWDFV+XouorjfgGqvKILJeHhuQgFYg==}
+
   clipboardy@4.0.0:
     resolution: {integrity: sha512-5mOlNS0mhX0707P2I0aZ2V/cmHUEO/fL7VFLqszkhUsxt7RwnmrInf/eEQKlf5GzvYeHIjT+Ov1HRfNmymlG0w==}
     engines: {node: '>=18'}
@@ -289,6 +292,9 @@ packages:
     engines: {node: '>=14.17'}
     hasBin: true
 
+  undici-types@6.19.8:
+    resolution: {integrity: sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw==}
+
   which@2.0.2:
     resolution: {integrity: sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==}
     engines: {node: '>= 8'}
@@ -367,6 +373,10 @@ snapshots:
 
   '@esbuild/win32-x64@0.23.1':
     optional: true
+
+  '@types/node@20.17.17':
+    dependencies:
+      undici-types: 6.19.8
 
   clipboardy@4.0.0:
     dependencies:
@@ -488,6 +498,8 @@ snapshots:
       fsevents: 2.3.3
 
   typescript@5.7.3: {}
+
+  undici-types@6.19.8: {}
 
   which@2.0.2:
     dependencies:
